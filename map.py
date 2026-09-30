@@ -10,6 +10,7 @@ import json
 from pathlib import Path
 from functools import lru_cache
 from spatial_mapping import DistrictIndex, assign_station_districts
+from region_names import normalizeCountyName, normalizeDistrictName
 from branca.element import MacroElement, Template
 from typing import Any, Dict, List, Optional, Tuple
 import folium
@@ -239,7 +240,9 @@ def prepare_map_observations(df):
     result["humid"] = result["humid"].where(result["humid"].between(0,100))
     for field in ("precip", "wind"):
         result[field] = result[field].where(result[field] >= 0)
-    return result[result["lat"].between(-90,90) & result["lon"].between(-180,180)].reset_index(drop=True)
+    result["lat"] = result["lat"].where(result["lat"].between(-90,90))
+    result["lon"] = result["lon"].where(result["lon"].between(-180,180))
+    return result.reset_index(drop=True)
 
 
 @lru_cache(maxsize=4)
@@ -247,6 +250,11 @@ def _load_boundaries_cached(versions):
     boundaries = {}
     for kind, filename, _ in versions:
         boundaries[kind] = json.loads(Path(filename).read_text(encoding="utf-8"))
+        for feature in boundaries[kind]["features"]:
+            props = feature["properties"]
+            props["COUNTYNAME"] = normalizeCountyName(props["COUNTYNAME"])
+            if "TOWNNAME" in props:
+                props["TOWNNAME"] = normalizeDistrictName(props["TOWNNAME"])
     return boundaries, DistrictIndex(boundaries.get("district", {}))
 
 
@@ -260,51 +268,48 @@ def load_boundaries():
 
 
 def build_weather_payload(df, boundaries, district_index):
+    """Start with every GeoJSON region; join raw counties and mapped districts independently."""
     layers = {key: spec for key, spec in WEATHER_LAYERS.items() if df[key].notna().any()}
     stations = json.loads(df.to_json(orient="records", force_ascii=False))
-    for index, item in enumerate(stations):
-        item.update(id="station:" + (item["stationId"] or str(index)), kind="station", name=item["stationName"], county=item["countyName"], district=item["townName"])
     regions = {"county": {}, "district": {}}
     for kind in regions:
-        for station in stations:
-            if not station["county"] or (kind == "district" and not station["district"]):
-                continue
-            key = (station["county"], station["district"] if kind == "district" else "")
-            region = regions[kind].setdefault(key, {"station_ids": [], "values": {}, "counts": {}, "points": []})
-            region["station_ids"].append(station["id"])
-            region["points"].append((station["lat"],station["lon"]))
-    datasets = {}
-    for key in layers:
-        counties = _build_county_markers(df, key)
-        districts = [item for items in _build_district_markers(df, key).values() for item in items]
-        for kind, items in [("county", counties), ("district", districts)]:
-            for item in items:
-                item["value"] = item.pop("avg_temp")
-                item["kind"] = kind
-                item["name"] = item.get("district", item["county"])
-                item["id"] = kind + ":" + item["county"] + ":" + item.get("district", "")
-                region = regions[kind][(item["county"], item.get("district", ""))]
-                region["values"][key] = item["value"]
-                region["counts"][key] = item["station_count"]
-        datasets[key] = {"county": counties, "district": districts}
-    # Stable anchors across metrics: prefer a source inside the polygon.
-    # Offshore CWA fallback sources use an interior geometry label point.
-    for dataset in datasets.values():
-        for kind, items in dataset.items():
-            for item in items:
-                region = regions[kind][(item["county"], item.get("district", ""))]
-                item.update({key:region[key] for key in ("station_ids", "values", "counts")})
-                if kind == "district":
-                    pair = (item["county"], item["district"])
-                    points = [point for point in region["points"] if pair in district_index.candidates(point[1],point[0])]
-                    if not points:
-                        anchor = district_index.label_point(*pair)
-                        if anchor:
-                            item["lat"], item["lon"] = anchor
-                        continue
-                    lat, lon = (sum(p[i] for p in points)/len(points) for i in (0,1))
-                    item["lat"], item["lon"] = min(points, key=lambda p:(p[0]-lat)**2+(p[1]-lon)**2)
-    return {"layers": layers, "datasets": datasets, "stations": stations, "boundaries": boundaries}
+        geometry_index = district_index if kind == "district" else DistrictIndex(boundaries.get(kind, {}))
+        for feature in boundaries.get(kind, {}).get("features", []):
+            props = feature["properties"]
+            county = normalizeCountyName(props["COUNTYNAME"])
+            district = normalizeDistrictName(props.get("TOWNNAME", "")) if kind == "district" else ""
+            pair = county, district
+            anchor = geometry_index.label_point(*pair)
+            regions[kind][pair] = dict(
+                id=kind+":"+county+":"+district, kind=kind, county=county, district=district,
+                name=district or county, lat=anchor[0] if anchor else None,
+                lon=anchor[1] if anchor else None, station_ids=[], values={}, counts={},
+                geometry=bool(feature.get("geometry")), status="NO DATA")
+    for index, item in enumerate(stations):
+        item.update(id="station:" + (item["stationId"] or str(index)), kind="station",
+                    name=item["stationName"], county=item["countyName"], district=item["townName"])
+        pairs = {"county": (normalizeCountyName(item["sourceCountyName"]), ""),
+                 "district": (normalizeCountyName(item["countyName"]), normalizeDistrictName(item["townName"]))}
+        for kind, pair in pairs.items():
+            if pair in regions[kind]:
+                regions[kind][pair]["station_ids"].append(item["id"])
+    station_lookup = {item["id"]: item for item in stations}
+    datasets = {key: {"county": [], "district": []} for key in layers}
+    for kind, collection in regions.items():
+        for region in collection.values():
+            for key in layers:
+                values = [station_lookup[sid][key] for sid in region["station_ids"]
+                          if station_lookup[sid][key] is not None]
+                region["counts"][key] = len(values)
+                region["values"][key] = sum(values)/len(values) if values else None
+            region["station_count"] = len(region["station_ids"])
+            region["status"] = "VALID DATA" if any(region["counts"].values()) else "NO DATA"
+            for key in layers:
+                if region["counts"][key]:
+                    datasets[key][kind].append(dict(region, value=region["values"][key],
+                                                    station_count=region["counts"][key]))
+    return {"layers": layers, "datasets": datasets, "stations": stations, "boundaries": boundaries,
+            "regions": {kind: list(items.values()) for kind, items in regions.items()}}
 
 
 def create_taiwan_realtime_weather_map(

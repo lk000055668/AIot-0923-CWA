@@ -4,6 +4,7 @@ No station-name heuristics. CWA's explicit county/town fields are retained as
 an identified fallback when the bundled reference geometry cannot locate a point.
 """
 from functools import lru_cache
+from region_names import normalizeCountyName, normalizeDistrictName
 
 
 def _ring_relation(x, y, ring):
@@ -33,7 +34,7 @@ class DistrictIndex:
         self.names = {}
         for feature in geojson.get("features", []):
             props, geometry = feature["properties"], feature.get("geometry") or {}
-            pair = (props["COUNTYNAME"], props["TOWNNAME"])
+            pair = self.normalized((props["COUNTYNAME"], props.get("TOWNNAME", "")))
             self.names[self.normalized(pair)] = pair
             polygons = [geometry["coordinates"]] if geometry.get("type") == "Polygon" else geometry.get("coordinates", []) if geometry.get("type") == "MultiPolygon" else []
             for polygon in polygons:
@@ -44,7 +45,7 @@ class DistrictIndex:
 
     @staticmethod
     def normalized(pair):
-        return tuple(str(value).strip().replace("台", "臺") for value in pair)
+        return normalizeCountyName(pair[0]), normalizeDistrictName(pair[1])
 
     @lru_cache(maxsize=8192)
     def candidates(self, lon, lat):

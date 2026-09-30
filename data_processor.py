@@ -9,6 +9,7 @@ from __future__ import annotations
 from typing import Any, Dict, List, Optional
 import math
 import pandas as pd
+from region_names import normalizeCountyName, normalizeDistrictName
 
 
 class DataProcessingError(Exception):
@@ -303,8 +304,8 @@ def parse_realtime_station_json(raw_json: Dict[str, Any]) -> pd.DataFrame:
         rows.append({
             "stationId": str(st_id),
             "stationName": str(st_name).strip(),
-            "countyName": str(county).strip(),
-            "townName": str(town).strip(),
+            "countyName": normalizeCountyName(county),
+            "townName": normalizeDistrictName(town),
             "lat": lat,
             "lon": lon,
             "temp": temp,
@@ -318,8 +319,8 @@ def parse_realtime_station_json(raw_json: Dict[str, Any]) -> pd.DataFrame:
         })
 
     df = pd.DataFrame(rows, columns=["stationId", "stationName", "countyName", "townName", "lat", "lon", "temp", "dailyHigh", "dailyLow", "precip", "wind", "humid", "weather", "obsTime"])
-    # 過濾缺少座標者
-    df = df[df["lat"].notnull() & df["lon"].notnull()].reset_index(drop=True)
+    # County observations remain useful even without station coordinates.
+    df = df.reset_index(drop=True)
     return df
 
 

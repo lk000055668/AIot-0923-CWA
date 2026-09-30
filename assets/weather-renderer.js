@@ -8,7 +8,9 @@
   let metric = Object.keys(data.layers)[0] || null, selectedStation = null, selectedRegion = null, pendingFocus = null;
   const overlays = {stations:false, county:false, district:false};
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const norm = value => String(value || '').replaceAll('台','臺').trim().toLowerCase();
+  const normalizeCountyName = value => String(value || '').normalize('NFKC').replace(/\s/g,'').replaceAll('台','臺');
+  const normalizeDistrictName = normalizeCountyName;
+  const norm = value => normalizeCountyName(value).toLowerCase();
   const regionKey = (county, district='') => norm(county) + '|' + norm(district);
   const valueOf = item => item.kind === 'station' ? item[metric] : item.value;
   function color(value) {
@@ -60,10 +62,11 @@
     return L.marker([item.lat,item.lon], {title:item.name,icon:L.divIcon({className:'weather-label',html,iconSize:[68,36],iconAnchor:[34,18]})})
       .bindTooltip(esc(item.name)+' '+value.toFixed(1)+' '+esc(unit)).bindPopup(popup(item), {maxWidth:310});
   }
-  function sync(items, cache, group, factory, predicate=()=>true) {
+  function sync(items, cache, group, factory, predicate=()=>true, viewportOnly=false) {
     const visible = new Set(), bounds = map.getBounds().pad(.08);
     items.forEach(item => {
-      if (!predicate(item) || !bounds.contains([item.lat,item.lon])) return;
+      if (!predicate(item) || !Number.isFinite(item.lat) || !Number.isFinite(item.lon) ||
+          (viewportOnly && !bounds.contains([item.lat,item.lon]))) return;
       visible.add(item.id);
       if (!cache.has(item.id)) cache.set(item.id, factory(item));
       if (!group.hasLayer(cache.get(item.id))) group.addLayer(cache.get(item.id));
@@ -106,13 +109,32 @@
     if (overlays.stations) {
       if (!map.hasLayer(locations)) map.addLayer(locations);
       sync(data.stations,locationCache,locations,item=>L.circleMarker([item.lat,item.lon],{radius:3,color:'#e2e8f0',weight:1,fillColor:'#334155',fillOpacity:.8})
-        .bindTooltip(esc(item.district || '行政區未確認')+' · 資料來源：'+esc(item.name)).bindPopup(()=>popup(item),{maxWidth:310}));
+        .bindTooltip(esc(item.district || '行政區未確認')+' · 資料來源：'+esc(item.name)).bindPopup(()=>popup(item),{maxWidth:310}),()=>true,true);
     } else map.removeLayer(locations);
     Object.entries(boundaryLayers).forEach(([kind, layer])=>{
       if (overlays[kind]) {if (!map.hasLayer(layer)) map.addLayer(layer);layer.setStyle(feature=>boundaryStyle(kind,feature));}
       else map.removeLayer(layer);
     });
     map.fire('weather:change',{metric,level:active});
+  }
+  function debug(kind=level()) {
+    const active=kind===level() && !!metric, group=groups[kind], cache=caches[kind];
+    const trace=(data.regions[kind]||[]).map(region=>{
+      const marker=cache.get(region.id), element=marker?.getElement();
+      return {id:region.id,name:region.county+(kind==='district'?' / '+region.name:''),region_exists:true,
+        station_count:region.station_ids.length,valid_temperature_count:region.counts.temp||0,
+        valid_count:region.counts[metric]||0,aggregation:region.values[metric]??null,
+        geometry:region.geometry,label_position:[region.lat,region.lon],marker_created:!!marker,
+        added_to_layer:!!marker&&group.hasLayer(marker),
+        still_exists_after_rendering:!!marker&&map.hasLayer(marker)&&!!element?.isConnected,
+        in_view:!!marker&&map.getBounds().contains(marker.getLatLng())};
+    });
+    const valid=trace.filter(row=>row.valid_count>0);
+    return {ACTIVE:active,METRIC:metric,TOTAL_REGIONS:trace.length,WITH_VALID_DATA:valid.length,
+      MARKERS_CREATED:valid.filter(row=>row.marker_created).length,
+      MARKERS_RENDERED:valid.filter(row=>row.still_exists_after_rendering).length,
+      MISSING:active?valid.filter(row=>!row.still_exists_after_rendering):[],
+      NO_DATA:trace.filter(row=>!row.valid_count).map(row=>row.name),TRACE:trace};
   }
   function openStation(item) {
     selection.clearLayers();updateWeatherLayers();
@@ -134,6 +156,7 @@
   ['county','district'].forEach(kind => {
     const grouped = new Map();
     data.stations.forEach(station=>{
+      if(!Number.isFinite(station.lat)||!Number.isFinite(station.lon))return;
       const name=kind==='county'?station.county:station.district;
       if (!name) return;
       const key=regionKey(station.county,kind==='district'?name:'');
@@ -142,9 +165,10 @@
     });
     grouped.forEach(item=>{if(!seen.has(item.id)) index.push(item);});
   });
-  index.push(...data.stations);
+  index.push(...data.stations.filter(station=>Number.isFinite(station.lat)&&Number.isFinite(station.lon)));
   const api = {
-    data, groups, overlays, boundaryLayers, locations, index, level, color, popup,
+    data, groups, overlays, boundaryLayers, locations, index, level, color, popup, debug,
+    normalizeCountyName, normalizeDistrictName,
     get metric(){return metric;},
     setMetric(key) {
       if (!(key in data.layers)) return;

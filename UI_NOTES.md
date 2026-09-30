@@ -16,7 +16,7 @@
 
 `app.py` 使用既有 CWA → data_processor → SQLite 流程，無示範、random 或 hard-coded 氣象值。沒有觀測時顯示空地圖狀態，仍可使用真實行政界線搜尋。`data_processor.py` 與 `database.py` 只修正缺測值不再轉成 0；真實的 0 保留。API 模組、DB schema、預報圖表與既有 zoom 閾值未改。
 
-`spatial_mapping.py` 以 longitude / latitude 對行政區 Polygon / MultiPolygon 做 point-in-polygon，處理 polygon 孔洞與共用邊界；利用 bounding box 預篩選並快取座標結果。`map.py` 對 mapping 後的資料沿用原有縣市／行政區聚合函式；所有指標走 `assets/weather-renderer.js` 同一個 zoom / move handler。測站即使缺氣溫，也可貢獻濕度等有值欄位的行政區平均，並保留於來源搜尋中。`map_ui.py` 和 `assets/weather-map.js` 負責控制 UI，不另建一套氣象處理。色階由 `WEATHER_LAYERS` 定義，只有有效資料才啟用。
+`spatial_mapping.py` 以 longitude / latitude 對行政區 Polygon / MultiPolygon 做 point-in-polygon，處理 polygon 孔洞與共用邊界；利用 bounding box 預篩選並快取座標結果。`map.py` 先從 GeoJSON 建立完整區域清單，縣市依原始 CWA 縣市欄位聚合，行政區依 mapping 結果聚合；所有指標走 `assets/weather-renderer.js` 同一個 zoom / move handler。測站即使缺氣溫，也可貢獻濕度等有值欄位的行政區平均。無座標測站保留於聚合及 Popup 來源，但無法提供測站位置搜尋。`map_ui.py` 和 `assets/weather-map.js` 負責控制 UI，不另建一套氣象處理。色階由 `WEATHER_LAYERS` 定義，只有有效資料才啟用。
 
 主要 UI 都在 Leaflet iframe 裡，圖層／overlay／搜尋不觸發 Streamlit rerun。設定按鈕固定於宿主頁面並開啟 dialog。sessionStorage 保存視角、圖層與 overlay；存取被瀏覽器禁用時仍能操作，但不保存。
 
@@ -45,6 +45,8 @@
 
 各氣象指標各自忽略缺測值取算術平均，僅有一站時即為該站讀數；雨量亦為測站平均，非全區總量。`counts` 記錄每個指標的有效站數，`station_ids` 保留區域全部來源。Popup 可展開來源測站的各項原始讀數與觀測時間；fallback 另有說明。
 
-標籤跨氣象圖層使用穩定位置：優先採用 polygon 內的來源座標；若只有外海 fallback 來源，使用行政區 polygon 內的幾何標籤點，避免行政區標籤跑到外海。此為標籤位置，不是新增測站或生成天氣資料。快取會在界線檔更新時失效。
+標籤跨氣象圖層使用穩定的 polygon 內部代表點，縣市與行政區都不使用測站座標。沿用現有 geometry helper 處理 MultiPolygon 與孔洞。有效區域全部保留 marker，縮放只切換縣市／行政區 layerGroup；平移不刪除區域標籤。測站位置疊加仍按視窗篩選。快取會在界線檔更新時失效。
+
+`map.weather.debug()` 回傳目前圖層／層級的完整數量、NO DATA 清單及逐區 trace。`MARKERS_RENDERED` 實際檢查 Leaflet layer 與 DOM 連線；`in_view` 另行記錄是否在視窗內。非目前層級以 `ACTIVE: false` 標示，避免將縮放時刻意隱藏的另一層級誤判為缺失。驗證結果與全部無有效氣溫行政區清單見 [LABEL_DEBUG_REPORT.md](LABEL_DEBUG_REPORT.md)。
 
 本次實際資料驗證：363 站，360 站直接 point-in-polygon 定位，3 站使用 CWA 既有欄位 fallback。新增 Polygon、MultiPolygon、孔洞、共用邊界、錯誤來源名稱、缺测聚合、單站與標籤位置測試；瀏覽器測試覆蓋 zoom 8 / 8.5 / 10 / 10.5 / 12 / 14 及「淡水／西屯／信義」搜尋。

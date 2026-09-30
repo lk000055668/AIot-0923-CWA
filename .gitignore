@@ -39,6 +39,7 @@ data/*.sqlite3
 
 # 測試與報告
 .pytest_cache/
+data/label-audit/
 .coverage
 htmlcov/
 

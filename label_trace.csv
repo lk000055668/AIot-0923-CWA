@@ -1,0 +1,391 @@
+﻿level,region,region_exists,station_count,valid_temperature_count,temperature,geometry,latitude,longitude,before_payload,before_marker_created,before_rendered,before_reason,after_marker_created,after_added_to_layer,after_rendered,after_in_view
+county,臺東縣,True,18,18,29.08888888888889,True,22.836821999999998,121.02661554562245,False,False,False,county name mismatch before marker data creation,True,True,True,True
+county,屏東縣,True,18,18,30.944444444444443,True,22.390381,120.653688936913,True,True,True,rendered,True,True,True,True
+county,雲林縣,True,24,21,30.928571428571427,True,23.6852705,120.39329733009166,True,True,True,rendered,True,True,True,True
+county,彰化縣,True,19,19,31.063157894736843,True,23.9964705,120.47570013903471,True,True,True,rendered,True,True,True,True
+county,苗栗縣,True,24,24,29.383333333333336,True,24.514813500000002,120.87329673990763,True,True,True,rendered,True,True,True,True
+county,新竹縣,True,17,17,29.194117647058825,True,24.6868805,121.14967858875792,True,True,True,rendered,True,True,True,True
+county,嘉義縣,True,33,33,28.62121212121212,True,23.425347000000002,120.50950223590276,True,True,True,rendered,True,True,True,True
+county,高雄市,True,21,18,31.883333333333333,True,22.9700955,120.63530823436639,True,True,True,rendered,True,True,True,True
+county,宜蘭縣,True,10,10,29.43,True,24.6489485,121.64690624182784,True,True,True,rendered,True,True,True,True
+county,連江縣,True,2,2,29.5,True,26.2152345,119.97338944202963,True,True,True,rendered,True,True,True,True
+county,金門縣,True,2,2,29.85,True,24.459916999999997,118.38144960012792,True,True,True,rendered,True,True,True,True
+county,臺中市,True,23,23,28.508695652173916,True,24.220032,120.8175453059076,False,False,False,county name mismatch before marker data creation,True,True,True,True
+county,澎湖縣,True,4,3,29.96666666666667,True,23.592427999999998,119.61584213694773,True,True,True,rendered,True,True,True,True
+county,南投縣,True,40,35,27.442857142857143,True,23.840645000000002,120.93293088329199,True,True,True,rendered,True,True,True,True
+county,花蓮縣,True,12,12,28.108333333333334,True,23.7342115,121.39540381216692,True,True,True,rendered,True,True,True,True
+county,基隆市,True,7,6,29.25,True,25.114649,121.70756591349159,True,True,True,rendered,True,True,True,True
+county,臺北市,True,9,9,29.77777777777778,True,25.0853365,121.56451510834896,False,False,False,county name mismatch before marker data creation,True,True,True,True
+county,新北市,True,25,25,30.031999999999996,True,24.986756999999997,121.7717166748092,True,True,True,rendered,True,True,True,True
+county,臺南市,True,31,30,31.57,True,23.1506995,120.33399290628827,False,False,False,county name mismatch before marker data creation,True,True,True,True
+county,桃園市,True,17,16,29.69375,True,24.855053499999997,121.25609996162854,True,True,True,rendered,True,True,True,True
+county,嘉義市,True,4,4,32.65,True,23.479000499999998,120.45113497977988,True,True,True,rendered,True,True,True,True
+county,新竹市,True,3,2,29.95,True,24.783724499999998,120.95933933913852,True,True,True,rendered,True,True,True,True
+district,臺東縣 / 成功鎮,True,1,1,28.7,True,23.105801,121.35137242007661,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 佳冬鄉,True,0,0,,True,22.429679,120.54591304440788,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 麥寮鄉,True,3,3,30.3,True,23.79994,120.23351356390774,True,True,True,rendered,True,True,True,True
+district,臺東縣 / 綠島鄉,True,0,0,,True,22.655372,121.49128709530811,False,False,False,NO DATA,False,False,False,False
+district,臺東縣 / 蘭嶼鄉,True,1,1,26.6,True,22.0422735,121.5431171792304,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,彰化縣 / 田中鎮,True,1,1,31.7,True,23.8569675,120.59576328338818,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 社頭鄉,True,0,0,,True,23.9058135,120.6006187432779,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 竹田鄉,True,2,2,32.6,True,22.5922795,120.53805721110427,True,True,True,rendered,True,True,True,False
+district,屏東縣 / 萬丹鄉,True,0,0,,True,22.577582,120.47654464140842,False,False,False,NO DATA,False,False,False,False
+district,苗栗縣 / 三灣鄉,True,0,0,,True,24.631314500000002,120.92906280100408,False,False,False,NO DATA,False,False,False,False
+district,新竹縣 / 峨眉鄉,True,1,1,30.4,True,24.672387999999998,121.00807969361045,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 南庄鄉,True,2,2,25.65,True,24.569192,121.02112051536727,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 太保市,True,0,0,,True,23.472786,120.34451950441557,False,False,False,NO DATA,False,False,False,False
+district,嘉義縣 / 中埔鄉,True,1,1,31.8,True,23.399299,120.5498430243664,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 番路鄉,True,0,0,,True,23.418927500000002,120.63287386957565,False,False,False,NO DATA,False,False,False,False
+district,嘉義縣 / 水上鄉,True,3,3,31.366666666666664,True,23.426194000000002,120.42253176990315,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 員林市,True,0,0,,True,23.9568445,120.59649286620578,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 小港區,True,0,0,,True,22.544308,120.35244851841742,False,False,False,NO DATA,False,False,False,False
+district,宜蘭縣 / 蘇澳鎮,True,0,0,,True,24.543484499999998,121.85631774705908,False,False,False,NO DATA,False,False,False,False
+district,宜蘭縣 / 五結鄉,True,1,1,30.2,True,24.680638000000002,121.80961691435644,True,True,True,rendered,True,True,True,True
+district,宜蘭縣 / 宜蘭市,True,1,1,29.7,True,24.748839,121.75819140212406,True,True,True,rendered,True,True,True,True
+district,宜蘭縣 / 壯圍鄉,True,1,1,29.5,True,24.759916500000003,121.80343256279778,True,True,True,rendered,True,True,True,True
+district,連江縣 / 南竿鄉,True,1,1,29.3,True,26.156499500000002,119.94905746464266,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,連江縣 / 莒光鄉,True,0,0,,True,25.9597095,119.97400722527712,False,False,False,NO DATA,False,False,False,False
+district,金門縣 / 金寧鄉,True,0,0,,True,24.453634,118.33100552963934,False,False,False,NO DATA,False,False,False,False
+district,金門縣 / 烏坵鄉,True,0,0,,True,24.9924255,119.45194735251769,False,False,False,NO DATA,False,False,False,False
+district,宜蘭縣 / 羅東鎮,True,1,1,29.6,True,24.6851045,121.76225274279379,True,True,True,rendered,True,True,True,True
+district,宜蘭縣 / 員山鄉,True,1,1,27,True,24.73813,121.66578623734463,True,True,True,rendered,True,True,True,True
+district,宜蘭縣 / 冬山鄉,True,1,1,31.3,True,24.646572,121.76098702137726,True,True,True,rendered,True,True,True,True
+district,宜蘭縣 / 三星鄉,True,1,1,30.7,True,24.6688775,121.6679272964206,True,True,True,rendered,True,True,True,True
+district,宜蘭縣 / 大同鄉,True,1,1,26.6,True,24.544646,121.53181998751697,True,True,True,rendered,True,True,True,True
+district,新竹縣 / 竹東鎮,True,0,0,,True,24.721029,121.08639481736901,False,False,False,NO DATA,False,False,False,False
+district,新竹縣 / 新埔鎮,True,3,3,30.366666666666664,True,24.8368045,121.07723733767726,True,True,True,rendered,True,True,True,True
+district,新竹縣 / 關西鎮,True,3,3,30.7,True,24.7848585,121.18532112436748,True,True,True,rendered,True,True,True,True
+district,新竹縣 / 湖口鄉,True,2,2,29.4,True,24.896332,121.0538816865658,True,True,True,rendered,True,True,True,False
+district,新竹縣 / 芎林鄉,True,0,0,,True,24.7689455,121.09776338904447,False,False,False,NO DATA,False,False,False,False
+district,新竹縣 / 橫山鄉,True,0,0,,True,24.705826000000002,121.14696582796282,False,False,False,NO DATA,False,False,False,False
+district,新竹縣 / 北埔鄉,True,0,0,,True,24.6726335,121.06080498657383,False,False,False,NO DATA,False,False,False,False
+district,新竹縣 / 尖石鄉,True,0,0,,True,24.596374,121.29532043844623,False,False,False,NO DATA,False,False,False,False
+district,新竹縣 / 五峰鄉,True,2,2,22.5,True,24.584148499999998,121.13944282360353,True,True,True,rendered,True,True,True,True
+district,臺中市 / 龍井區,True,1,1,29.7,True,24.208968,120.50674148882035,True,True,True,rendered,True,True,True,True
+district,臺中市 / 大雅區,True,0,0,,True,24.2304405,120.64168564705574,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 沙鹿區,True,1,1,29.1,True,24.230781999999998,120.5759472617608,True,True,True,rendered,True,True,True,True
+district,臺中市 / 梧棲區,True,0,0,,True,24.2529375,120.52319985170928,False,False,False,NO DATA,False,False,False,False
+district,澎湖縣 / 湖西鄉,True,0,0,,True,23.580475999999997,119.65504817994315,False,False,False,NO DATA,False,False,False,False
+district,苗栗縣 / 苗栗市,True,1,1,29.6,True,24.558878999999997,120.81450169143173,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 卓蘭鎮,True,1,1,29,True,24.3267935,120.83817625128387,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 大湖鄉,True,2,2,30.15,True,24.3983135,120.87628798353236,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 公館鄉,True,2,2,30.5,True,24.497971999999997,120.84470566957957,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 銅鑼鄉,True,1,1,29,True,24.4609005,120.78991991526757,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 頭屋鄉,True,1,1,30.8,True,24.571486,120.88502032574578,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 三義鄉,True,2,2,28.8,True,24.3793815,120.77619213954424,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 西湖鄉,True,1,1,30.7,True,24.534305500000002,120.76115091084444,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 造橋鄉,True,1,1,30,True,24.627885499999998,120.8535433700907,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 獅潭鄉,True,1,1,28.2,True,24.5228865,120.92698575280806,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 泰安鄉,True,0,0,,True,24.404719999999998,121.07957942456258,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 彰化市,True,4,4,31.4,True,24.075858500000002,120.55943592216411,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 和美鎮,True,1,1,30.8,True,24.118871499999997,120.51368815395622,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 線西鄉,True,0,0,,True,24.139934,120.4446606477427,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 伸港鄉,True,0,0,,True,24.169615999999998,120.47285388325781,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 秀水鄉,True,0,0,,True,24.034184,120.50409533460484,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 花壇鄉,True,0,0,,True,24.0291295,120.55972888898546,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 芬園鄉,True,0,0,,True,23.9995575,120.62285635656865,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 溪湖鎮,True,0,0,,True,23.951627,120.4813811214724,False,False,False,NO DATA,False,False,False,False
+district,嘉義縣 / 東石鄉,True,2,2,29.9,True,23.459713999999998,120.18276772068673,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 大村鄉,True,2,2,31.4,True,23.9922355,120.55877589514282,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 埔鹽鄉,True,1,1,31.3,True,23.992700499999998,120.45924207021775,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 埔心鄉,True,0,0,,True,23.955984,120.53906206965979,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 永靖鄉,True,0,0,,True,23.9183935,120.54186327682434,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 二水鄉,True,0,0,,True,23.8138315,120.6234908120578,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 二林鎮,True,1,1,31.2,True,23.925961,120.41359826033441,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 埤頭鄉,True,0,0,,True,23.8785085,120.47494904494005,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 芳苑鄉,True,3,3,30.2,True,23.962759,120.34710126157947,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 大城鄉,True,1,1,29.2,True,23.8692065,120.28356217722101,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 竹塘鄉,True,1,1,31.7,True,23.8540855,120.40624595032679,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 溪州鄉,True,0,0,,True,23.832162500000003,120.52222350042615,False,False,False,NO DATA,False,False,False,False
+district,南投縣 / 南投市,True,0,0,,True,23.9219175,120.67516480575583,False,False,False,NO DATA,False,False,False,False
+district,南投縣 / 埔里鎮,True,4,4,30.45,True,23.9743695,120.98416653802761,True,True,True,rendered,True,True,True,True
+district,南投縣 / 草屯鎮,True,2,1,31.3,True,23.982442,120.74253429622294,True,True,True,rendered,True,True,True,True
+district,南投縣 / 竹山鎮,True,3,2,32.650000000000006,True,23.715334,120.68678421355085,True,True,True,rendered,True,True,True,True
+district,南投縣 / 集集鎮,True,0,0,,True,23.8376125,120.78277000595179,False,False,False,NO DATA,False,False,False,False
+district,南投縣 / 名間鄉,True,3,3,30.766666666666666,True,23.8458215,120.674198625698,True,True,True,rendered,True,True,True,True
+district,南投縣 / 鹿谷鄉,True,4,2,26.4,True,23.733679000000002,120.78183432818801,True,True,True,rendered,True,True,True,True
+district,南投縣 / 中寮鄉,True,3,2,30.6,True,23.9084635,120.78158158214947,True,True,True,rendered,True,True,True,True
+district,南投縣 / 魚池鄉,True,4,4,27.775,True,23.8714875,120.9297582655334,True,True,True,rendered,True,True,True,True
+district,南投縣 / 國姓鄉,True,5,5,27.96,True,24.010225,120.85044668052143,True,True,True,rendered,True,True,True,True
+district,南投縣 / 水里鄉,True,0,0,,True,23.809133,120.87523423179566,False,False,False,NO DATA,False,False,False,False
+district,南投縣 / 信義鄉,True,3,3,23.400000000000002,True,23.650111000000003,121.01758110886169,True,True,True,rendered,True,True,True,True
+district,南投縣 / 仁愛鄉,True,9,9,23.855555555555554,True,24.0275045,121.13104167739388,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 斗六市,True,0,0,,True,23.705281,120.56959163765731,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 斗南鎮,True,1,1,33.1,True,23.6771705,120.46236228659158,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 虎尾鎮,True,2,2,31.9,True,23.707767,120.4300222078646,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 西螺鎮,True,1,1,31.8,True,23.7794515,120.4502844664967,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 土庫鎮,True,1,1,31.4,True,23.696075,120.3546616412697,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 北港鎮,True,0,0,,True,23.589204,120.30061257747946,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 古坑鄉,True,5,4,30.45,True,23.63316,120.57040110978656,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 大埤鄉,True,0,0,,True,23.643513499999997,120.42777456676859,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 莿桐鄉,True,0,0,,True,23.765382,120.52563566873539,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 林內鄉,True,1,1,31.5,True,23.752364999999998,120.61445421152573,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 二崙鄉,True,1,0,,True,23.787196,120.39688587392831,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 崙背鄉,True,2,1,31.3,True,23.781609500000002,120.32717875584719,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 東勢鄉,True,0,0,,True,23.699011499999997,120.24998214467722,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 褒忠鄉,True,0,0,,True,23.715266,120.31308712254759,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 元長鄉,True,1,1,31.9,True,23.643937,120.31061112896612,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 水林鄉,True,0,0,,True,23.568975000000002,120.23962255,False,False,False,NO DATA,False,False,False,False
+district,嘉義縣 / 朴子市,True,1,1,31.3,True,23.443036,120.24168882091067,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 大林鎮,True,2,2,32.1,True,23.593015,120.49093665334485,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 民雄鄉,True,3,3,31.96666666666667,True,23.54167,120.43965495711527,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 溪口鄉,True,1,1,31.9,True,23.597209,120.39435426642063,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 新港鄉,True,1,1,31.5,True,23.5490595,120.34187767832955,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 六腳鄉,True,0,0,,True,23.516004,120.27621246549418,False,False,False,NO DATA,False,False,False,False
+district,嘉義縣 / 義竹鄉,True,2,2,30.85,True,23.348813999999997,120.22299563912594,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 鹿草鄉,True,1,1,30.8,True,23.40688,120.30958431231359,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 竹崎鄉,True,5,5,26.68,True,23.5014295,120.59837848473364,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 梅山鄉,True,5,5,24.48,True,23.547542999999997,120.6768810108575,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 大埔鄉,True,2,2,31.35,True,23.290926,120.58372311844155,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 阿里山鄉,True,3,3,20.8,True,23.449606,120.78528507189657,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 屏東市,True,1,1,32.7,True,22.666339999999998,120.47348225746703,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 潮州鎮,True,0,0,,True,22.5346915,120.56307225561987,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 長治鄉,True,1,1,32.9,True,22.6910085,120.55250095472584,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 麟洛鄉,True,0,0,,True,22.645809999999997,120.52785523484448,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 九如鄉,True,1,1,32.9,True,22.730334,120.48059716151677,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 里港鄉,True,0,0,,True,22.7970325,120.50433361037993,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 鹽埔鄉,True,0,0,,True,22.7397865,120.56419057800198,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 高樹鄉,True,0,0,,True,22.802496,120.59026910096495,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 萬巒鄉,True,1,1,31.7,True,22.5878125,120.59704730772157,True,True,True,rendered,True,True,True,False
+district,屏東縣 / 內埔鄉,True,2,2,31.6,True,22.646369999999997,120.58256863713673,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 新埤鄉,True,1,1,31.7,True,22.485832000000002,120.58061843595644,True,True,True,rendered,True,True,True,False
+district,屏東縣 / 崁頂鄉,True,0,0,,True,22.5184505,120.4985309477799,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 南州鄉,True,1,1,30.7,True,22.481147,120.51484932072555,True,True,True,rendered,True,True,True,False
+district,屏東縣 / 琉球鄉,True,0,0,,True,22.3391175,120.37239689230296,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 三地門鄉,True,0,0,,True,22.7865965,120.6783360503579,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 霧臺鄉,True,0,0,,True,22.748091000000002,120.80662685736573,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 瑪家鄉,True,0,0,,True,22.6694135,120.68993918910337,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 泰武鄉,True,1,1,24,True,22.598247999999998,120.69095477523572,True,True,True,rendered,True,True,True,False
+district,屏東縣 / 來義鄉,True,0,0,,True,22.502141,120.69128336252595,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 春日鄉,True,1,1,29.9,True,22.4060485,120.69288164060032,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,屏東縣 / 獅子鄉,True,0,0,,True,22.2393365,120.76487772836938,False,False,False,NO DATA,False,False,False,False
+district,臺東縣 / 鹿野鄉,True,3,3,30.133333333333336,True,22.9489515,121.16405715566958,True,True,True,rendered,True,True,True,True
+district,臺東縣 / 池上鄉,True,0,0,,True,23.092784,121.226218544702,False,False,False,NO DATA,False,False,False,False
+district,臺東縣 / 延平鄉,True,0,0,,True,22.886747,120.96178391193769,False,False,False,NO DATA,False,False,False,False
+district,花蓮縣 / 光復鄉,True,0,0,,True,23.648840999999997,121.44388055837841,False,False,False,NO DATA,False,False,False,False
+district,花蓮縣 / 瑞穗鄉,True,1,1,30.4,True,23.5202655,121.41655569514316,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 富里鄉,True,1,1,24.8,True,23.1987115,121.29634897580505,True,True,True,rendered,True,True,True,True
+district,澎湖縣 / 馬公市,True,1,1,29.1,True,23.550808,119.61384091327612,True,True,True,rendered,True,True,True,True
+district,澎湖縣 / 白沙鄉,True,1,0,,True,23.641765499999998,119.59683676133797,False,False,False,NO DATA,False,False,False,False
+district,澎湖縣 / 西嶼鄉,True,1,1,30.6,True,23.6075485,119.51319088243076,True,True,True,rendered,True,True,True,True
+district,澎湖縣 / 望安鄉,True,1,1,30.2,True,23.3748625,119.50272560290605,True,True,True,rendered,True,True,True,True
+district,澎湖縣 / 七美鄉,True,0,0,,True,23.2039845,119.43156809300953,False,False,False,NO DATA,False,False,False,False
+district,基隆市 / 暖暖區,True,0,0,,True,25.0831095,121.74298579434867,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 大安區,True,2,2,31.4,True,25.026574,121.53892013362749,True,True,True,rendered,True,True,True,False
+district,臺北市 / 文山區,True,1,1,31.3,True,24.9880135,121.57296071937152,True,True,True,rendered,True,True,True,False
+district,高雄市 / 鹽埕區,True,0,0,,True,22.624843,120.28361778476528,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 新興區,True,0,0,,True,22.6283945,120.30651952314008,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 前金區,True,0,0,,True,22.6270285,120.29310481264946,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 前鎮區,True,0,0,,True,22.588687,120.30815916138818,False,False,False,NO DATA,False,False,False,False
+district,宜蘭縣 / 頭城鎮,True,0,0,,True,24.8978075,121.82770974535316,False,False,False,NO DATA,False,False,False,False
+district,宜蘭縣 / 南澳鄉,True,1,1,29.9,True,24.465531,121.71061109254913,True,True,True,rendered,True,True,True,True
+district,新竹縣 / 竹北市,True,2,2,29.9,True,24.832707,120.99452789640475,True,True,True,rendered,True,True,True,True
+district,新竹縣 / 新豐鄉,True,1,1,29,True,24.903927000000003,120.99126342798462,True,True,True,rendered,True,True,True,False
+district,苗栗縣 / 苑裡鎮,True,3,3,29.333333333333332,True,24.409214,120.69187795790825,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 通霄鎮,True,1,1,30.5,True,24.489121,120.71392812049436,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 竹南鎮,True,2,2,29.55,True,24.6943105,120.86534338885724,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 後龍鎮,True,2,2,30.4,True,24.616822,120.78332559221839,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 鹿港鎮,True,2,2,30,True,24.0833985,120.43258710493186,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 福興鄉,True,0,0,,True,24.026794000000002,120.43113281501387,False,False,False,NO DATA,False,False,False,False
+district,雲林縣 / 臺西鄉,True,1,1,30.3,True,23.71054,120.19067419015016,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 四湖鄉,True,2,2,30.8,True,23.6444425,120.20248345959774,True,True,True,rendered,True,True,True,True
+district,雲林縣 / 口湖鄉,True,3,3,30.03333333333333,True,23.5733185,120.17009916951955,True,True,True,rendered,True,True,True,True
+district,嘉義縣 / 布袋鎮,True,1,1,30.6,True,23.381418500000002,120.19069365406008,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 東港鎮,True,1,1,30.3,True,22.463677,120.46816834065172,True,True,True,rendered,True,True,True,False
+district,屏東縣 / 枋寮鄉,True,0,0,,True,22.3991635,120.59658374280355,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 新園鄉,True,0,0,,True,22.5133285,120.44628883715609,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 林邊鄉,True,1,1,29.9,True,22.4401965,120.5115385148469,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,屏東縣 / 車城鄉,True,1,1,30.6,True,22.076175499999998,120.74941973096499,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,屏東縣 / 滿州鄉,True,0,0,,True,22.057859,120.84073396445498,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 枋山鄉,True,0,0,,True,22.249321000000002,120.66061283396074,False,False,False,NO DATA,False,False,False,False
+district,屏東縣 / 牡丹鄉,True,1,1,30.3,True,22.1528865,120.81527236826892,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,臺東縣 / 臺東市,True,1,1,29.3,True,22.751342,121.11010480335955,True,True,True,rendered,True,True,True,True
+district,臺東縣 / 卑南鄉,True,5,5,28.68,True,22.773798,120.99002505711951,True,True,True,rendered,True,True,True,True
+district,臺東縣 / 東河鄉,True,1,1,29.5,True,22.980804499999998,121.25923120605285,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 吉安鄉,True,2,2,29.9,True,23.954809500000003,121.56319377590759,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 壽豐鄉,True,0,0,,True,23.83973,121.51984897900883,False,False,False,NO DATA,False,False,False,False
+district,花蓮縣 / 秀林鄉,True,1,1,12.9,True,24.094434999999997,121.46641786147433,True,True,True,rendered,True,True,True,True
+district,高雄市 / 楠梓區,True,1,1,31.1,True,22.7248155,120.2977745504818,True,True,True,rendered,True,True,True,True
+district,高雄市 / 鳳山區,True,0,0,,True,22.6160875,120.35303775932553,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 大寮區,True,0,0,,True,22.592088,120.40816115493755,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 大樹區,True,1,1,32.2,True,22.7104185,120.42610586296085,True,True,True,rendered,True,True,True,True
+district,高雄市 / 大社區,True,0,0,,True,22.737873999999998,120.36278693157638,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 仁武區,True,1,1,30.7,True,22.705405499999998,120.36179286644256,True,True,True,rendered,True,True,True,True
+district,高雄市 / 鳥松區,True,1,1,31.2,True,22.667146,120.36822069527199,True,True,True,rendered,True,True,True,True
+district,高雄市 / 岡山區,True,1,1,32.6,True,22.8040125,120.29302335835376,True,True,True,rendered,True,True,True,True
+district,高雄市 / 橋頭區,True,1,0,,True,22.753063,120.29965642180508,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 燕巢區,True,0,0,,True,22.7893285,120.37159705997331,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 田寮區,True,1,1,31.6,True,22.8656025,120.39757685076003,True,True,True,rendered,True,True,True,True
+district,高雄市 / 阿蓮區,True,0,0,,True,22.8697405,120.32866325898361,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 路竹區,True,2,2,30.450000000000003,True,22.859195999999997,120.2623591452633,True,True,True,rendered,True,True,True,True
+district,高雄市 / 湖內區,True,0,0,,True,22.894723999999997,120.22528388456375,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 旗山區,True,1,1,32.7,True,22.8759285,120.47443849282452,True,True,True,rendered,True,True,True,True
+district,高雄市 / 美濃區,True,2,2,32.95,True,22.9058425,120.55454524549071,True,True,True,rendered,True,True,True,True
+district,高雄市 / 六龜區,True,1,1,31.7,True,23.002167999999998,120.64824963559231,True,True,True,rendered,True,True,True,True
+district,高雄市 / 甲仙區,True,2,2,31.400000000000002,True,23.122438000000002,120.6285075157857,True,True,True,rendered,True,True,True,True
+district,高雄市 / 杉林區,True,1,1,32.8,True,22.986774,120.57128818317923,True,True,True,rendered,True,True,True,True
+district,高雄市 / 內門區,True,1,1,31.9,True,22.956819,120.47181627186758,True,True,True,rendered,True,True,True,True
+district,高雄市 / 茂林區,True,1,0,,True,22.9187365,120.75102481885374,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 桃源區,True,0,0,,True,23.2234485,120.83094941585111,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 那瑪夏區,True,0,0,,True,23.2700405,120.70374513854614,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 永和區,True,0,0,,True,25.007601,121.51674844300518,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 新店區,True,1,1,32,True,24.928418,121.53886456620978,True,True,True,rendered,True,True,True,False
+district,新北市 / 土城區,True,2,2,31.799999999999997,True,24.96594,121.44591913276659,True,True,True,rendered,True,True,True,False
+district,新北市 / 蘆洲區,True,0,0,,True,25.087958999999998,121.46927652468717,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 五股區,True,0,0,,True,25.0965235,121.43405443663758,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 坪林區,True,3,3,28,True,24.912177,121.72455511319649,True,True,True,rendered,True,True,True,False
+district,新北市 / 平溪區,True,1,1,29.7,True,25.025713500000002,121.74892702254465,True,True,True,rendered,True,True,True,False
+district,新北市 / 烏來區,True,2,2,29.2,True,24.783493,121.52018952135947,True,True,True,rendered,True,True,True,True
+district,臺中市 / 豐原區,True,0,0,,True,24.2502195,120.7346555990321,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 東勢區,True,0,0,,True,24.242215,120.85198697001186,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 后里區,True,2,2,29.8,True,24.3182425,120.71862693716486,True,True,True,rendered,True,True,True,True
+district,臺中市 / 神岡區,True,2,2,29.95,True,24.264084,120.67580441784865,True,True,True,rendered,True,True,True,True
+district,臺中市 / 新社區,True,2,2,26.8,True,24.177702,120.81760607461587,True,True,True,rendered,True,True,True,True
+district,臺中市 / 石岡區,True,0,0,,True,24.262676499999998,120.78191736151008,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 外埔區,True,0,0,,True,24.330864,120.65747934646649,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 大肚區,True,1,1,28.6,True,24.1426385,120.55317706948767,True,True,True,rendered,True,True,True,True
+district,臺中市 / 和平區,True,5,5,24.080000000000002,True,24.274478,121.13346962099351,True,True,True,rendered,True,True,True,True
+district,臺南市 / 新營區,True,1,1,31.8,True,23.2996955,120.29658156409846,True,True,True,rendered,True,True,True,True
+district,臺南市 / 鹽水區,True,0,0,,True,23.3008425,120.24591845471735,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 白河區,True,1,1,31.7,True,23.3505075,120.445933709505,True,True,True,rendered,True,True,True,True
+district,臺南市 / 後壁區,True,2,1,32.1,True,23.3594,120.3328148039499,True,True,True,rendered,True,True,True,True
+district,臺南市 / 麻豆區,True,1,1,31.1,True,23.181078,120.25289718466666,True,True,True,rendered,True,True,True,True
+district,臺南市 / 下營區,True,2,2,32.349999999999994,True,23.233092499999998,120.25383461166109,True,True,True,rendered,True,True,True,True
+district,臺南市 / 六甲區,True,1,1,31.4,True,23.228093,120.38559177007065,True,True,True,rendered,True,True,True,True
+district,臺南市 / 官田區,True,3,3,32,True,23.189765,120.35494211545483,True,True,True,rendered,True,True,True,True
+district,臺南市 / 大內區,True,1,1,33.8,True,23.150604,120.39222158020472,True,True,True,rendered,True,True,True,True
+district,臺南市 / 佳里區,True,0,0,,True,23.164796000000003,120.18200869634319,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 學甲區,True,0,0,,True,23.254032000000002,120.18009563875111,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 西港區,True,0,0,,True,23.1205395,120.19764986753441,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 新化區,True,2,2,32.25,True,23.0361115,120.33153563988503,True,True,True,rendered,True,True,True,True
+district,臺南市 / 新市區,True,1,1,31.2,True,23.082252500000003,120.29235785684176,True,True,True,rendered,True,True,True,True
+district,臺南市 / 安定區,True,0,0,,True,23.100802,120.22392875890132,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 玉井區,True,2,2,32.05,True,23.126385499999998,120.46112544898227,True,True,True,rendered,True,True,True,True
+district,臺南市 / 楠西區,True,2,2,31.95,True,23.177321499999998,120.5135149205684,True,True,True,rendered,True,True,True,True
+district,臺南市 / 南化區,True,1,1,29.6,True,23.1210585,120.56888053119732,True,True,True,rendered,True,True,True,True
+district,臺南市 / 左鎮區,True,0,0,,True,23.023162499999998,120.4068871257127,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 仁德區,True,0,0,,True,22.9452905,120.24311947965971,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 歸仁區,True,0,0,,True,22.9555215,120.2941726634372,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 關廟區,True,1,1,31.2,True,22.950741,120.33479637223112,True,True,True,rendered,True,True,True,True
+district,臺南市 / 龍崎區,True,0,0,,True,22.9570375,120.39213980027608,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 永康區,True,2,2,31.450000000000003,True,23.0291725,120.25295559399379,True,True,True,rendered,True,True,True,True
+district,臺南市 / 北區,True,0,0,,True,23.010131,120.20394457663693,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 林園區,True,0,0,,True,22.5031795,120.39190674749486,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 茄萣區,True,0,0,,True,22.885202999999997,120.19679236905853,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 永安區,True,0,0,,True,22.825116,120.2305067534493,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 彌陀區,True,0,0,,True,22.774235,120.24434400251356,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 梓官區,True,0,0,,True,22.7446625,120.25747822020185,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 淡水區,True,2,2,28.9,True,25.1836695,121.45961373397623,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,新北市 / 瑞芳區,True,1,1,29.6,True,25.0891195,121.80338674140856,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,新北市 / 林口區,True,0,0,,True,25.1013585,121.3463195801839,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 三芝區,True,0,0,,True,25.2309445,121.52542214717124,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 八里區,True,0,0,,True,25.127762,121.39360759367898,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 大甲區,True,1,1,29.4,True,24.377660499999998,120.66237205452876,True,True,True,rendered,True,True,True,True
+district,臺中市 / 大安區,True,0,0,,True,24.364902999999998,120.58882252772382,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 北門區,True,1,1,29.7,True,23.282607499999997,120.1222763967017,True,True,True,rendered,True,True,True,True
+district,臺南市 / 安南區,True,1,1,32,True,23.044129499999997,120.14507718081131,True,True,True,rendered,True,True,True,True
+district,桃園市 / 蘆竹區,True,1,1,28.9,True,25.05534,121.28421335699042,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,桃園市 / 龜山區,True,0,0,,True,25.021438,121.36711054274791,False,False,False,NO DATA,False,False,False,False
+district,桃園市 / 復興區,True,1,1,21.5,True,24.716192999999997,121.37575211497662,True,True,True,rendered,True,True,True,True
+district,嘉義市 / 東區,True,3,3,32.96666666666667,True,23.480926500000002,120.47563791044652,True,True,True,rendered,True,True,True,True
+district,嘉義市 / 西區,True,1,1,31.7,True,23.474698,120.42439758065788,True,True,True,rendered,True,True,True,True
+district,臺東縣 / 達仁鄉,True,0,0,,True,22.369208999999998,120.81015504654715,False,False,False,NO DATA,False,False,False,False
+district,臺東縣 / 大武鄉,True,1,1,29.9,True,22.3773225,120.89714909620355,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,臺東縣 / 關山鎮,True,1,1,30.6,True,23.0538685,121.17652831840367,True,True,True,rendered,True,True,True,True
+district,臺東縣 / 海端鄉,True,0,0,,True,23.1236675,121.03165883629296,False,False,False,NO DATA,False,False,False,False
+district,新竹市 / 北區,True,0,0,,True,24.819703500000003,120.95944175605322,False,False,False,NO DATA,False,False,False,False
+district,新竹市 / 香山區,True,1,1,28.9,True,24.770556999999997,120.92677907853684,True,True,True,rendered,True,True,True,True
+district,宜蘭縣 / 礁溪鄉,True,1,1,29.8,True,24.812519,121.73955542750446,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 玉里鎮,True,3,3,29.733333333333334,True,23.378523,121.35725300716271,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 卓溪鄉,True,1,1,29.9,True,23.3796975,121.15521601956621,True,True,True,rendered,True,True,True,True
+district,苗栗縣 / 頭份市,True,1,1,29.3,True,24.66926,120.91208638870424,True,True,True,rendered,True,True,True,True
+district,臺中市 / 清水區,True,2,2,29.3,True,24.2963605,120.57827717448714,True,True,True,rendered,True,True,True,True
+district,臺南市 / 南區,True,0,0,,True,22.950221499999998,120.19420556984599,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 東區,True,0,0,,True,22.980532,120.23082163451394,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 安平區,True,0,0,,True,22.9856265,120.16724332583172,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 中西區,True,1,1,30.7,True,22.9944095,120.19913921841373,True,True,True,rendered,True,True,True,True
+district,桃園市 / 大溪區,True,1,1,30.7,True,24.8709805,121.30092349151012,True,True,True,rendered,True,True,True,True
+district,桃園市 / 八德區,True,1,1,32,True,24.947978,121.29759051740226,True,True,True,rendered,True,True,True,False
+district,桃園市 / 桃園區,True,3,3,31.133333333333336,True,24.99737,121.30220659001662,True,True,True,rendered,True,True,True,False
+district,桃園市 / 大園區,True,1,0,,True,25.062019999999997,121.20373569565808,False,False,False,NO DATA,False,False,False,False
+district,桃園市 / 楊梅區,True,2,2,29.65,True,24.915633,121.12409798727961,True,True,True,rendered,True,True,True,False
+district,基隆市 / 七堵區,True,3,3,29.766666666666666,True,25.1053335,121.68848206820684,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,基隆市 / 仁愛區,True,1,1,28.6,True,25.120864,121.7435809756766,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,基隆市 / 信義區,True,0,0,,True,25.127571,121.77390226800213,False,False,False,NO DATA,False,False,False,False
+district,基隆市 / 中正區,True,1,1,28.1,True,25.1427735,121.7642397568518,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,基隆市 / 中山區,True,1,1,29.5,True,25.147964,121.73541712013545,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,基隆市 / 安樂區,True,1,0,,True,25.144084999999997,121.7001108475138,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 三峽區,True,0,0,,True,24.8711035,121.41543824122162,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 鶯歌區,True,1,1,31.3,True,24.9551765,121.34771715638698,True,True,True,rendered,True,True,True,False
+district,新北市 / 中和區,True,0,0,,True,24.989556999999998,121.50496586834805,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 樹林區,True,2,2,31.9,True,24.9813885,121.40179249349495,True,True,True,rendered,True,True,True,False
+district,新北市 / 深坑區,True,0,0,,True,24.9974655,121.62238105792893,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 板橋區,True,0,0,,True,25.005961999999997,121.45330161493948,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 石碇區,True,4,4,29.3,True,24.9496445,121.63609370346948,True,True,True,rendered,True,True,True,False
+district,新北市 / 新莊區,True,0,0,,True,25.031996499999998,121.43902361713414,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 泰山區,True,1,1,29.5,True,25.052431,121.4179993364817,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,新北市 / 三重區,True,1,1,31.2,True,25.0666505,121.48690223481309,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,新北市 / 雙溪區,True,0,0,,True,24.998531,121.82080286350879,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 貢寮區,True,1,1,32,True,25.041517,121.91132533276965,True,True,True,rendered,True,True,True,False
+district,新北市 / 汐止區,True,2,2,30.6,True,25.083574,121.65045036529933,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,新北市 / 萬里區,True,0,0,,True,25.176471,121.65620106861334,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 金山區,True,0,0,,True,25.219361499999998,121.60683653638392,False,False,False,NO DATA,False,False,False,False
+district,新北市 / 石門區,True,1,1,29.5,True,25.257662,121.58321828372894,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,高雄市 / 苓雅區,True,0,0,,True,22.623095,120.32573409431711,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 三民區,True,0,0,,True,22.6557545,120.323214462643,False,False,False,NO DATA,False,False,False,False
+district,桃園市 / 新屋區,True,2,2,29.45,True,24.9763075,121.07220559541756,True,True,True,rendered,True,True,True,False
+district,桃園市 / 觀音區,True,1,1,29.3,True,25.0240335,121.0964684748337,True,True,True,rendered,True,True,True,False
+district,連江縣 / 北竿鄉,True,0,0,,True,26.2152345,119.97338944202963,False,False,False,NO DATA,False,False,False,False
+district,連江縣 / 東引鄉,True,1,1,29.7,True,26.3699265,120.49658457745943,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,金門縣 / 烈嶼鄉,True,0,0,,True,24.4307,118.24246172600556,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 旗津區,True,3,2,32.900000000000006,True,22.5826085,120.2886521102901,True,True,True,rendered,True,True,True,False
+district,臺東縣 / 長濱鄉,True,1,1,28,True,23.3286665,121.43350069285052,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 豐濱鄉,True,0,0,,True,23.589518499999997,121.4777323683629,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 霧峰區,True,2,2,31.799999999999997,True,24.045466,120.72738382511211,True,True,True,rendered,True,True,True,True
+district,臺中市 / 大里區,True,0,0,,True,24.0976585,120.69386810347036,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 南區,True,0,0,,True,24.120005,120.66454887695477,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 烏日區,True,1,1,31.3,True,24.082237,120.63404798877147,True,True,True,rendered,True,True,True,True
+district,臺中市 / 中區,True,0,0,,True,24.1418465,120.68062125089256,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 西區,True,0,0,,True,24.1462035,120.6616654512195,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 南屯區,True,0,0,,True,24.1398385,120.61953177698263,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 北區,True,1,1,31.7,True,24.158141999999998,120.68411209866909,True,True,True,rendered,True,True,True,True
+district,臺中市 / 西屯區,True,1,1,30.6,True,24.184149,120.62413093165502,True,True,True,rendered,True,True,True,True
+district,臺中市 / 北屯區,True,0,0,,True,24.188042,120.75730777078051,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 潭子區,True,0,0,,True,24.211098999999997,120.71224971274383,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 信義區,True,0,0,,True,25.028786500000002,121.57299059367031,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 萬華區,True,0,0,,True,25.029469499999998,121.49529503222065,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 中正區,True,1,1,32.1,True,25.0292645,121.51336243310001,True,True,True,rendered,True,True,True,False
+district,臺北市 / 南港區,True,1,1,31.1,True,25.038362,121.6063883372274,True,True,True,rendered,True,True,True,False
+district,臺北市 / 松山區,True,0,0,,True,25.060298500000002,121.55742538507072,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 大同區,True,0,0,,True,25.064532999999997,121.5128780326666,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 中山區,True,0,0,,True,25.0687535,121.53003855675817,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 內湖區,True,0,0,,True,25.083424,121.5947238063155,False,False,False,NO DATA,False,False,False,False
+district,臺北市 / 士林區,True,1,1,29.7,True,25.134783,121.56758721025662,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,臺北市 / 北投區,True,3,3,27,True,25.1530045,121.51978047955413,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,花蓮縣 / 花蓮市,True,1,1,29.3,True,23.994995,121.60394938010606,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 新城鄉,True,0,0,,True,24.071364000000003,121.61192820041663,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 善化區,True,1,1,32,True,23.140646,120.30262602901807,True,True,True,rendered,True,True,True,True
+district,臺南市 / 山上區,True,0,0,,True,23.104599,120.40228955259678,False,False,False,NO DATA,False,False,False,False
+district,彰化縣 / 北斗鎮,True,2,2,32.65,True,23.867963500000002,120.53357707793265,True,True,True,rendered,True,True,True,True
+district,彰化縣 / 田尾鄉,True,0,0,,True,23.897754499999998,120.52994111216921,False,False,False,NO DATA,False,False,False,False
+district,金門縣 / 金城鎮,True,1,1,29.8,True,24.4152645,118.30468906212744,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,金門縣 / 金沙鎮,True,0,0,,True,24.490418499999997,118.41849075572156,False,False,False,NO DATA,False,False,False,False
+district,金門縣 / 金湖鎮,True,1,1,29.9,True,24.442925000000002,118.41670501664049,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,臺南市 / 柳營區,True,0,0,,True,23.2683745,120.33709861192347,False,False,False,NO DATA,False,False,False,False
+district,臺南市 / 東山區,True,1,1,32.4,True,23.2808865,120.45810709197627,True,True,True,rendered,True,True,True,True
+district,臺南市 / 七股區,True,3,3,30.099999999999998,True,23.119474,120.10274376055084,True,True,True,rendered,True,True,True,True
+district,臺南市 / 將軍區,True,0,0,,True,23.211415,120.12897714297804,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 鼓山區,True,0,0,,True,22.6425865,120.26767013421298,False,False,False,NO DATA,False,False,False,False
+district,高雄市 / 左營區,True,0,0,,True,22.6821305,120.29336449914842,False,False,False,NO DATA,False,False,False,False
+district,臺東縣 / 金峰鄉,True,0,0,,True,22.584521000000002,120.85959059461777,False,False,False,NO DATA,False,False,False,False
+district,臺東縣 / 太麻里鄉,True,3,3,29.066666666666666,True,22.5796305,120.98690328137417,True,True,True,rendered,True,True,True,False
+district,桃園市 / 中壢區,True,1,1,30.6,True,24.976771499999998,121.21236539448597,True,True,True,rendered,True,True,True,False
+district,新竹市 / 東區,True,2,1,31,True,24.7875905,120.99208104766413,True,True,True,rendered,True,True,True,True
+district,新竹縣 / 寶山鄉,True,3,3,30.03333333333333,True,24.742337,121.0034710431459,True,True,True,rendered,True,True,True,True
+district,屏東縣 / 恆春鎮,True,2,2,30.5,True,21.979167500000003,120.7645358447212,True,False,False,outside padded viewport: sync skipped marker,True,True,True,False
+district,臺中市 / 東區,True,0,0,,True,24.137216000000002,120.69791551725991,False,False,False,NO DATA,False,False,False,False
+district,臺中市 / 太平區,True,1,1,29.6,True,24.1048975,120.77103753732726,True,True,True,rendered,True,True,True,True
+district,花蓮縣 / 萬榮鄉,True,0,0,,True,23.696334,121.32312831734723,False,False,False,NO DATA,False,False,False,False
+district,花蓮縣 / 鳳林鎮,True,2,2,30.5,True,23.7461085,121.4695438835565,True,True,True,rendered,True,True,True,True
+district,桃園市 / 平鎮區,True,2,2,30.25,True,24.921889,121.2199382915166,True,True,True,rendered,True,True,True,False
+district,桃園市 / 龍潭區,True,1,1,30,True,24.846680499999998,121.20945898459425,True,True,True,rendered,True,True,True,True
