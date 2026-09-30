@@ -1,0 +1,1 @@
+# 此檔案用於讓 Git 追蹤 data 目錄，實際的 SQLite 資料庫 (*.db) 將被 .gitignore 忽略。

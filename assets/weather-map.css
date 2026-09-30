@@ -1,0 +1,52 @@
+html,body{margin:0!important;width:100%;height:100%;overflow:hidden;background:#0b1220;color:#e2e8f0}
+.folium-map{width:100%!important;height:100%!important;position:absolute!important;inset:0}
+.leaflet-container{font:13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft JhengHei",sans-serif;background:#101c2a}
+.weather-dark .leaflet-tile-pane{filter:invert(1) hue-rotate(185deg) saturate(.45) brightness(.72)}
+.leaflet-top{top:12px!important}.leaflet-left{left:12px!important}.leaflet-right{right:12px!important}.leaflet-bottom{bottom:22px!important}
+.weather-glass{background:rgba(15,23,42,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid #ffffff21;border-radius:15px;box-shadow:0 8px 32px #0004;color:#e2e8f0;box-sizing:border-box}
+.weather-controls{width:238px;padding:16px;max-height:calc(100dvh - 240px);overflow:auto;overscroll-behavior:contain}
+.weather-eyebrow{font-size:9px;font-weight:700;letter-spacing:1.7px;color:#8ba4b9}.weather-heading h1{font-size:21px;font-weight:650;margin:5px 0 0;color:#f1f5f9}
+.weather-glass p{font-size:11px;color:#a2b3c7;margin:8px 0 12px;line-height:1.6}.weather-controls label,.control-label{display:block;font-size:11px;color:#9aadc2;margin:12px 0 6px}
+.weather-controls select{width:100%;background:#182538;color:#f1f5f9;border:1px solid #ffffff20;border-radius:9px;padding:9px 8px;font:inherit;min-height:38px;cursor:pointer;color-scheme:dark}
+.weather-controls select:focus-visible,summary:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid #7dd3fc;outline-offset:3px}
+.weather-glass summary{cursor:pointer;list-style:none;user-select:none}.weather-glass summary::-webkit-details-marker{display:none}
+.weather-options{border-top:1px solid #ffffff16;margin-top:12px;padding-top:12px}.weather-options>summary::after{content:'＋';float:right}.weather-options[open]>summary::after{content:'−'}
+.weather-controls .weather-check{display:flex;gap:8px;align-items:center;color:#dce6f1;margin:8px 0}.weather-check input{accent-color:#38bdf8;width:15px;height:15px}
+.weather-summary{width:244px}.weather-summary>summary{display:flex;gap:9px;align-items:center;padding:12px 15px;font-weight:600}.weather-count{margin-left:auto;font-size:10px;color:#a2b3c7}.weather-summary-body{padding:0 15px 14px;max-height:calc(100dvh - 160px);overflow:auto;overscroll-behavior:contain}
+.summary-reading{display:grid;grid-template-columns:1fr auto;gap:0 10px;padding:9px 0;border-bottom:1px solid #ffffff10}.summary-reading>span{align-self:center;color:#b4c3d4;font-size:11px}.summary-reading>b{font-size:24px;line-height:1.3}.summary-reading b small{font-size:11px;font-weight:400}.summary-place{grid-column:1/-1;color:#94a3b8;font-size:10px;overflow-wrap:anywhere}.summary-reading:first-child>b{color:#fb923c}.summary-reading:nth-child(2)>b{color:#7dd3fc}.summary-reading:nth-child(3)>b{color:#5eead4}.summary-time time{font-variant-numeric:tabular-nums;font-size:10px}
+.weather-warning{border-left:2px solid #fbbf24;padding-left:10px;margin-top:15px}.weather-warning small{font-size:10px;color:#94a3b8}.weather-glass .weather-error{color:#fbbf24;overflow-wrap:anywhere}.weather-error:empty{display:none}
+.weather-legend{width:238px;padding:12px 15px;margin-bottom:60px}.legend-title{display:flex;justify-content:space-between;margin-bottom:9px}.legend-title span{color:#bdcbd9}.legend-scale{display:flex;height:9px;border-radius:6px;overflow:hidden}.legend-scale span{flex:1}.weather-ticks{display:flex;justify-content:space-evenly;font-size:9px;color:#b4c3d4;margin-top:4px}.weather-legend small{display:block;color:#8da1b7;font-size:10px;margin-top:7px}
+.leaflet-control-zoom{border:1px solid #ffffff20!important;border-radius:10px!important;overflow:hidden;margin-bottom:18px!important}.leaflet-control-zoom a{background:#142035e8!important;color:#e2e8f0!important;border-color:#ffffff20!important}.leaflet-control-attribution{position:fixed;right:0;bottom:0;background:#0f172ae0!important;color:#a3b4c5;font-size:9px}.leaflet-control-attribution a{color:#a3b4c5}.leaflet-control-scale{position:fixed!important;bottom:24px;left:175px}.leaflet-control-scale-line{color:#cbd5e1;background:#0f172acc;border-color:#64748b;text-shadow:none}
+.weather-value{background:var(--weather-color);color:white;border:1px solid #ffffffa0;border-radius:14px;padding:3px 7px;text-align:center;white-space:nowrap;box-shadow:0 2px 8px #0007;font-size:11px;line-height:1.35}.weather-value>span{display:block;font-size:10px}.weather-value b{font-size:12px}.weather-value small{font-size:9px;margin-left:2px}.weather-value.station{border-radius:12px;padding:5px 6px}.weather-hide-labels .weather-value{width:9px;height:9px;padding:0;border-radius:50%}.weather-hide-labels .weather-value>*{display:none}
+/* Light weather cards: scoped selectors win over Leaflet's later-loaded CSS. */
+.leaflet-container .leaflet-popup-content-wrapper,
+.leaflet-container .leaflet-popup-tip{background:#fff;color:#334155;box-shadow:0 10px 30px #0003}
+.leaflet-container .leaflet-popup-content-wrapper{opacity:1}
+.leaflet-container .leaflet-popup-content{min-width:210px;color:#334155;font-size:13px;line-height:1.6}
+.leaflet-popup-content .station-popup{color:#334155;opacity:1;font-variant-numeric:tabular-nums}
+.leaflet-popup-content .station-popup h3{font-size:22px;line-height:1.3;font-weight:750;color:#0f172a;margin:5px 0 14px}
+.leaflet-popup-content .station-popup strong{font-size:36px;line-height:1.25;font-weight:750;color:#0f172a}
+.leaflet-popup-content .station-popup small{color:#64748b;font-size:12px}
+.leaflet-popup-content .station-popup>small{color:#475569;font-weight:500}
+.leaflet-popup-content .station-popup strong small{color:#334155;font-size:18px;font-weight:600}
+.leaflet-popup-content .station-popup p{color:#475569;font-size:12px;line-height:1.7}
+.leaflet-popup-content .popup-observations{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin:16px 0}
+.leaflet-popup-content .popup-observations span{color:#475569;font-size:12px;line-height:1.6}
+.leaflet-popup-content .popup-observations b{display:block;color:#0f172a;font-size:17px;font-weight:700}
+.leaflet-popup-content .station-popup summary,
+.leaflet-popup-content .station-popup a{color:#0369a1;cursor:pointer;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.leaflet-popup-content .station-popup summary:hover,
+.leaflet-popup-content .station-popup a:hover{color:#075985}
+.leaflet-popup-content .station-popup summary:focus-visible,
+.leaflet-popup-content .station-popup a:focus-visible{outline:2px solid #0369a1;outline-offset:3px;border-radius:2px}
+.leaflet-container .leaflet-popup a.leaflet-popup-close-button{color:#475569}
+.leaflet-container .leaflet-popup a.leaflet-popup-close-button:hover{color:#0f172a}
+.leaflet-popup-content .source-list article{border-bottom:1px solid #e2e8f0;color:#334155}
+.leaflet-popup-content .source-list article>b{color:#334155;font-weight:650}
+
+.search-host{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:min(380px,calc(100% - 560px));z-index:1000}.weather-search{padding:0;overflow:hidden}.search-input-row{display:flex;align-items:center;padding:3px 10px;gap:8px}.search-input-row>span{font-size:25px;color:#7dd3fc}.search-input-row input{width:100%;min-width:0;border:0;outline-offset:-3px;background:transparent;color:#f1f5f9;height:40px;font:inherit}.search-input-row button{color:#b6c7d8;border:0;background:transparent;font-size:23px;cursor:pointer}.search-input-row input::placeholder{color:#91a4b9;font-size:12px}
+#weather-results{border-top:1px solid #ffffff18;max-height:310px;overflow:auto;overscroll-behavior:contain;padding:5px}#weather-results button{display:block;width:100%;border:0;border-radius:7px;background:transparent;color:#e2e8f0;text-align:left;padding:9px 10px;font:inherit;cursor:pointer}#weather-results button small{display:block;color:#94a3b8;font-size:10px}#weather-results button:hover,#weather-results button[aria-selected="true"]{background:#273c53}.search-empty{padding:8px 10px;color:#94a3b8}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}
+@media(max-width:900px){.search-host{top:14px;width:calc(100% - 44px)}.leaflet-top{top:70px!important}.weather-controls{width:220px}.weather-summary{width:210px}.weather-legend{width:220px}}
+@media(max-width:600px){.weather-controls{width:190px;padding:12px;max-height:calc(100dvh - 265px)}.weather-heading h1{font-size:17px}.weather-eyebrow{font-size:8px}.weather-summary{width:132px}.weather-summary>summary{padding:12px 10px;font-size:11px}.weather-count{display:none}.weather-summary[open]{width:170px}.weather-legend{width:200px}.weather-summary-body{max-height:calc(100dvh - 220px)}.summary-reading>b{font-size:21px}.leaflet-left{left:2px!important}.leaflet-right{right:2px!important}.leaflet-control-attribution{font-size:8px;max-width:100vw}}
+
+.popup-sources{margin-top:10px;font-size:11px}.source-list{max-height:230px;overflow:auto;overscroll-behavior:contain}.source-list article{padding:10px 0;border-bottom:1px solid #e2e8f0}.source-list .popup-observations{margin:7px 0}.station-popup{max-height:min(460px,65dvh);overflow:auto;overscroll-behavior:contain}
